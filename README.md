@@ -1,4 +1,4 @@
-# NLP Resume Screening Project Report | Group 5
+# Automated Resume Classification Using NLP and Machine Learning
 
 ## Project Overview
 
