@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: Resume Screening using Text Classification
+message: If you use this software or methodology, please cite it as below.
+type: software
+authors:
+  - family-names: Swaroop
+    given-names: Veda
+repository-code: https://github.com/Vedv7/Resume-Screening-using-Text-classification
+url: https://github.com/Vedv7/Resume-Screening-using-Text-classification
+license: MIT
+keywords:
+  - natural-language-processing
+  - text-classification
+  - resume-screening
+  - scikit-learn
+  - tf-idf

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-screening"
+version = "0.1.0"
+description = "Multiclass resume categorization with TF-IDF and scikit-learn (LinearSVC)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Veda Swaroop" }]
+keywords = ["nlp", "classification", "resume", "scikit-learn", "tf-idf"]
+dependencies = [
+    "numpy>=1.24,<3",
+    "pandas>=2,<3",
+    "scikit-learn>=1.3,<2",
+    "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+]
+notebook = [
+    "jupyter>=1.0",
+    "ipykernel>=6.25",
+    "matplotlib>=3.7,<4",
+    "seaborn>=0.13,<1",
+]
+
+[project.scripts]
+resume-train = "resume_screening.cli:main_train"
+resume-predict = "resume_screening.cli:main_predict"
+
+[project.urls]
+Repository = "https://github.com/Vedv7/Resume-Screening-using-Text-classification"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
